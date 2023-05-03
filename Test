@@ -1,0 +1,25 @@
+import mayflower.*;
+
+public class MyMayflower extends Mayflower
+{
+    public MyMayflower()
+    {
+        // window is 1600 x 1200 pixels
+        super("Project", 1600, 1200);
+
+    }
+
+    public void init()
+    {
+        // change this to true to run this program in fullscreen mode
+        Mayflower.setFullScreen(false);
+        World w =  new TitleScreen();
+        Mayflower.setWorld(w);
+    }
+    
+    public void act()
+    {
+        
+        
+    }
+}
